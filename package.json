@@ -26,6 +26,7 @@
 		"react-helmet": "^6.1.0",
 		"react-image-annotation": "^0.9.10",
 		"react-image-file-resizer": "^0.4.7",
+		"react-js-pagination": "^3.0.3",
 		"react-router": "6.0.0-alpha.5",
 		"react-router-dom": "6.0.0-alpha.5",
 		"react-scripts": "4.0.3",

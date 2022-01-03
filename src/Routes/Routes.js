@@ -22,6 +22,7 @@ import Annotorious from "Views/Annotorious/Annotorious";
 import PlusForm from "Views/PlusForm/PlusForm";
 import MapTouchs from "Views/MapTouchs/MapTouchs";
 import WorkerLayout from "Components/WorkerLayout/WorkerLayout";
+import Page from "Views/PageNation/Page";
 const routes = [
 	{
 		path: "/",
@@ -47,6 +48,7 @@ const routes = [
 			// { path: "imgupload", element: <Imgupload /> },
 			// { path: "imgstpes", element: <ImgSteps /> },
 			{ path: "plusform", element: <PlusForm /> },
+			{ path: "pagenation", element: <Page /> },
 			{ path: "maptouchs", element: <MapTouchs /> },
 		],
 	},

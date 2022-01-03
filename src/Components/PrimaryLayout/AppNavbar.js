@@ -66,7 +66,12 @@ const items = [
 	{
 		href: "/app/annotorious",
 		icon: <ThreeDRotation />,
-		title: "annotorious",
+		title: "Annotorious",
+	},
+	{
+		href: "/app/pagenation",
+		icon: <ThreeDRotation />,
+		title: "Pagenation",
 	},
 	{
 		href: "/app/settings",
