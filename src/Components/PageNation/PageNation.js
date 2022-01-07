@@ -42,6 +42,13 @@ const PageNation = () => {
 					})}
 				</tbody>
 			</table>
+			{/* <ul key={item.id}>
+								<li>{item.id}</li>
+								<li>{item.first_name}</li>
+								<li>{item.last_name}</li>
+								<li>{item.email}</li>
+								<li>{item.phone}</li>
+			</ul> */}
 			{/* <div>
 				{currentTableData.map((item) => {
 					return (
