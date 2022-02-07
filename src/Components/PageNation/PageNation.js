@@ -1,9 +1,26 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import Pagination from "react-js-pagination";
 import "Assets/css/pagenations.css";
 import data from "./mock-data.json";
 let PageSize = 5; //보여지는 페이지 수 조절
 const PageNation = () => {
+	const [videos, setVideos] = useState([]);
+
+	useEffect(() => {
+		const requestOptions = {
+			method: "GET",
+			redirect: "follow",
+		};
+
+		fetch(
+			"https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=25&key=AIzaSyAtrSZkopq--QXlpEYQ5SrM9Kg5TZlZMl0",
+			requestOptions
+		)
+			.then((response) => response.json())
+			.then((result) => setVideos(result.items))
+			.catch((error) => console.log("error", error));
+	}, []);
+
 	const [currentPage, setCurrentPage] = useState(1);
 
 	const handlePageChange = (page) => {
@@ -15,6 +32,8 @@ const PageNation = () => {
 		const lastPageIndex = firstPageIndex + PageSize;
 		return data.slice(firstPageIndex, lastPageIndex);
 	}, [currentPage]);
+
+	console.log(videos);
 
 	return (
 		<>
@@ -72,6 +91,23 @@ const PageNation = () => {
 				nextPageText={"›"}
 				onChange={handlePageChange}
 			/>
+
+			<ul>
+				{videos.map((video) => (
+					<li key={video.id}>
+						<div>
+							<img
+								src={video.snippet.thumbnails.medium.url}
+								alt="video thumbnail"
+							/>
+							<div>
+								<p>{video.snippet.title}</p>
+								<p>{video.snippet.channelTitle}</p>
+							</div>
+						</div>
+					</li>
+				))}
+			</ul>
 		</>
 	);
 };

@@ -3,8 +3,8 @@ import Grid from "@mui/material/Grid";
 import { makeStyles } from "@mui/styles";
 // import TeamModal from "src/components/Team/TeamModal";
 // import { Cards } from "src/components/Card/Card";
-import TeamModal from "../../Components/Team/TeamModal";
-import { Cards } from "../../Components/Team/Cards";
+import TeamModal from "../Team/TeamModal";
+import { Cards } from "../Team/Cards";
 import axios from "axios";
 // import Cards from "../../Components/Team/Cards";
 const useStyles = makeStyles((theme) => ({
