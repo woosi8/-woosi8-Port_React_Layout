@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { useState, useEffect } from "react";
-import { useHistory } from "react-router";
+// import { useHistory } from "react-router";
 
 // import { useNavigate, Navigate } from 'react-router-dom';
 import {
@@ -63,7 +63,7 @@ const StyledBtn = styled(Button)(({ theme }) => ({
 }));
 
 const Imgupload = () => {
-	const history = useHistory();
+	// const history = useHistory();
 
 	const [alignment, setAlignment] = useState("left");
 	const [formats, setFormats] = useState(() => ["italic"]);

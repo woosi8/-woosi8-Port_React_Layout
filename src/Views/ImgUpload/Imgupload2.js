@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { useState } from "react";
-import { useHistory } from "react-router";
+// import { useHistory } from "react-router";
 import { styled, Typography, Button } from "@mui/material";
 // import { useNavigate } from 'react-router-dom';
 
@@ -51,7 +51,7 @@ const StyledBtn = styled(Button)(({ theme }) => ({
 }));
 
 const Imgupload2 = () => {
-	const history = useHistory();
+	// const history = useHistory();
 	const [alignment, setAlignment] = useState("right");
 	const handleAlignment = (event, newAlignment) => {
 		setAlignment(newAlignment);

@@ -16,20 +16,48 @@ import {
 	NavLink as RouterLink,
 } from "react-router-dom";
 
+import { Users as UsersIcon } from "react-feather";
+
 // import SquareButton from '../SquareComponents/Button/Button';
 
-import { AccessAlarm, ThreeDRotation } from "@mui/icons-material";
+import { ThreeDRotation } from "@mui/icons-material";
+import AppRegistrationIcon from "@mui/icons-material/AppRegistration";
+import ImageIcon from "@mui/icons-material/Image";
+import ArchiveIcon from "@mui/icons-material/Archive";
+import RecentActorsIcon from "@mui/icons-material/RecentActors";
+import CreateIcon from "@mui/icons-material/Create";
+import EastIcon from "@mui/icons-material/East";
+import AddCircleIcon from "@mui/icons-material/AddCircle";
+import AppsIcon from "@mui/icons-material/Apps";
+import TableRowsIcon from "@mui/icons-material/TableRows";
 
 const items = [
 	{
 		href: "/app/team",
-		icon: <AccessAlarm />,
+		icon: <TableRowsIcon />,
 		title: "CRUD",
 	},
 	{
-		href: "/app/table_making",
-		icon: <AccessAlarm />,
-		title: "table_making",
+		href: "/app/t_create",
+		icon: <UsersIcon />,
+		title: "Team_Create",
+	},
+
+	{
+		href: "/app/annotorious",
+		icon: <CreateIcon />,
+		title: "Annotorious",
+	},
+
+	{
+		href: "/app/maptouchs",
+		icon: <AppsIcon />,
+		title: "MapTouchs",
+	},
+	{
+		href: "/app/imgstpes",
+		icon: <EastIcon />,
+		title: "ImgSteps",
 	},
 
 	// {
@@ -37,47 +65,50 @@ const items = [
 	//   icon: <DashboardCustomizeOutlined />,
 	//   title: 'WorkSpace'
 	// },
-	{
-		href: "/app/team_card",
-		icon: <ThreeDRotation />,
-		title: "team_card",
-	},
+
 	// {
 	//   href: '/app/project',
 	//   icon: <AiOutlineProject />,
 	//   title: 'Project'
 	// },
-	{
-		href: "/app/team_create",
-		icon: <ThreeDRotation />,
-		title: "team_create",
-	},
+
 	{
 		href: "/app/loading",
-		icon: <ThreeDRotation />,
-		title: "loading",
-	},
-	{
-		href: "/app/drag_drop",
-		icon: <ThreeDRotation />,
-		title: "drag_drop",
+		icon: <ImageIcon />,
+		title: "ImgLoading",
 	},
 
 	{
-		href: "/app/annotorious",
-		icon: <ThreeDRotation />,
-		title: "Annotorious",
+		href: "/app/plusform",
+		icon: <AddCircleIcon />,
+		title: "PlusForm",
+	},
+	{
+		href: "/app/drag_drop",
+		icon: <ArchiveIcon />,
+		title: "Drag_drop",
+	},
+	{
+		href: "/app/t_card",
+		icon: <RecentActorsIcon />,
+		title: "Team_Maker",
+	},
+	{
+		href: "/app/table_making",
+		icon: <AppRegistrationIcon />,
+		title: "Table_making",
 	},
 	{
 		href: "/app/pagenation",
 		icon: <ThreeDRotation />,
 		title: "Pagenation",
 	},
-	{
-		href: "/app/settings",
-		icon: <ThreeDRotation />,
-		title: "Settings",
-	},
+
+	// {
+	// 	href: "/app/settings",
+	// 	icon: <ThreeDRotation />,
+	// 	title: "Settings",
+	// },
 ];
 
 const useStyles = makeStyles((theme) => ({

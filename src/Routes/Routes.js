@@ -18,11 +18,12 @@ import Loading from "Views/Loading/Loading";
 import DragDrop from "Components/DND_Workflow/WorkFlow";
 import Annotorious from "Views/Annotorious/Annotorious";
 // import Imgupload from "Views/ImgUpload/Imgupload";
-// import ImgSteps from "Views/ImgUpload/ImgStep";
+import ImgSteps from "Views/ImgUpload/ImgStep";
 import PlusForm from "Views/PlusForm/PlusForm";
 import MapTouchs from "Views/MapTouchs/MapTouchs";
 import WorkerLayout from "Components/WorkerLayout/WorkerLayout";
 import Page from "Views/PageNation/Page";
+import Account from "Views/Acount/Account";
 const routes = [
 	{
 		path: "/",
@@ -39,14 +40,15 @@ const routes = [
 		children: [
 			{ path: "", element: <Navigate to="/expert/dashboard" /> },
 			{ path: "team", element: <TeamManagers /> },
+			{ path: "team/usersAccount", element: <Account /> },
 			{ path: "table_making", element: <TableMaking /> },
-			{ path: "team_card", element: <TeamSpecification /> },
-			{ path: "team_create", element: <Team /> },
+			{ path: "t_card", element: <TeamSpecification /> },
+			{ path: "t_create", element: <Team /> },
 			{ path: "loading", element: <Loading /> },
 			{ path: "drag_drop", element: <DragDrop /> },
 			{ path: "annotorious", element: <Annotorious /> },
 			// { path: "imgupload", element: <Imgupload /> },
-			// { path: "imgstpes", element: <ImgSteps /> },
+			{ path: "imgstpes", element: <ImgSteps /> },
 			{ path: "plusform", element: <PlusForm /> },
 			{ path: "pagenation", element: <Page /> },
 			{ path: "maptouchs", element: <MapTouchs /> },
