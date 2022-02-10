@@ -71,7 +71,7 @@ const WorkerHeader = ({ open, setOpen }) => {
 							fontSize: 12,
 						}}
 					>
-						JKH
+						CH
 					</Avatar>
 				</IconButton>
 				<Menu
