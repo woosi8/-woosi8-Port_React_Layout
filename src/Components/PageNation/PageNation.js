@@ -2,6 +2,8 @@ import React, { useState, useMemo, useEffect } from "react";
 import Pagination from "react-js-pagination";
 import "Assets/css/pagenations.css";
 import data from "./mock-data.json";
+import { Button2, ColorBox } from "../../Assets/Common-styled";
+
 let PageSize = 5; //보여지는 페이지 수 조절
 const PageNation = () => {
 	const [videos, setVideos] = useState([]);
@@ -34,6 +36,14 @@ const PageNation = () => {
 	}, [currentPage]);
 
 	console.log(videos);
+
+	// BTN Click 이벤트
+	const [mycolor, setMyColor] = useState("red");
+	const [textcolor, setTextcolor] = useState("white");
+	const onClick = () => {
+		mycolor === "red" ? setMyColor("yellow") : setMyColor("red");
+		mycolor === "red" ? setTextcolor("red") : setTextcolor("white");
+	};
 
 	return (
 		<>
@@ -91,6 +101,13 @@ const PageNation = () => {
 				nextPageText={"›"}
 				onChange={handlePageChange}
 			/>
+
+			<ColorBox mycolor={mycolor} onClick={onClick} textcolor={textcolor}>
+				BTN
+			</ColorBox>
+			<Button2 color="blue" background="green">
+				Green Button
+			</Button2>
 
 			<ul>
 				{videos.map((video) => (

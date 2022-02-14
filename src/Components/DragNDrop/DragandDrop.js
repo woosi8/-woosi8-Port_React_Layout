@@ -72,6 +72,7 @@ const DragDrops = ({ history }) => {
 						</Grid>
 					))}
 				</Grid>
+
 				{/* <Divider /> */}
 			</div>
 		</>
