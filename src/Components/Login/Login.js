@@ -1,15 +1,13 @@
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
-import Link from "@mui/material/Link";
-import { Form, useForm } from "../Custom/UserForm";
-import Input from "../Custom/Input";
+import Typography from "@mui/material/Typography";
 import FormButton from "../Custom/FormButton";
+import Input from "../Custom/Input";
+import { Form, useForm } from "../Custom/UserForm";
 
 // import corplogo from "../../Assets/Images/corplogo.png";
 // import reactIcon from "../../Assets/Images/react-blue.png";
 // import corplogo from '../../Assets/Images/corplogo.png'
-import AppleIcon from "@mui/icons-material/Apple";
 import { useNavigate } from "react-router-dom";
 
 const preventDefault = (event) => event.preventDefault();
@@ -56,7 +54,7 @@ const LoginComponent = () => {
 					alt="corplogo"
 					style={{ width: "20%", height: "60%" }}
 				/> */}
-				<img
+				{/* <img
 					className="img"
 					// ref={imgEl}
 					// width="80%"
@@ -64,7 +62,7 @@ const LoginComponent = () => {
 				"
 					alt="Hallstatt Town Square"
 					style={{ width: "40vw" }}
-				/>
+				/> */}
 				{/* <AppleIcon style={{ fontSize: "10vw", color: "#3f51b5" }} /> */}
 				<br />
 				<Typography
@@ -133,14 +131,12 @@ const LoginComponent = () => {
 				}}
 				onClick={preventDefault}
 			>
-				<Typography variant="h8" noWrap component="div" color="gray">
+				{/* <Typography variant="h8" noWrap component="div" color="gray">
 					Don't have an account?&nbsp;
-					{/* <Link href="/dashboard" underline="hover"> */}
 					<Link onClick={() => navigate("/app")} underline="hover">
 						{"Sign Up"}
 					</Link>
-					{/* 3bfe86789de224ba21184b96af3b8287 */}
-				</Typography>
+				</Typography> */}
 			</Box>
 		</>
 	);
